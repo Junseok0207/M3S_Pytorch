@@ -7,7 +7,40 @@ A PyTorch implementation of "<a href="https://arxiv.org/abs/1902.11038">Multi-St
 To implement the details, I refer official codes of <a href="https://github.com/liqimai/gcn/tree/AAAI-18/">"Deeper Insights into Graph Convolutional Networks
 for Semi-Supervised Learning".</a>
 
-<img src="img/M3S_Architecture.PNG" width="700px"></img>
+<img src="Img/M3S_Architecture.png" width="700px"></img>
+
+## Requirements
+- Python version : 3.9.7
+- Pytorch version : 1.10.1
+- torch-geometric version : 2.0.3
+
+### Hyperparameters
+
+`--dataset:`
+Name of the dataset. Supported names are: cora, citeseer, pubmed, computers, photo.  
+usage example :`--dataset computers`
+
+`--label_rate:`
+Percentage of labeled nodes.  
+usage example :`--label_rate 0.15`
+
+`--stage:`
+Number of stage to pseudo-label.  
+usage example :`--stage 3`
+
+`--clustering:`
+Whether or not to check the pseudo-label using k-means clustering 
+False : Self-Training / True : M3S   
+usage example :`--clustering`
+
+`--num_k:`
+The number of clusters for k-means clustering
+usage example :`--num_k 3`
+
+```
+python main.py --dataset computers --label_rate 0.15 --clustering
+```
+
 
 ## Experimental Results
 
