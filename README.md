@@ -29,7 +29,7 @@ Number of stage to pseudo-label.
 usage example :`--stage 3`
 
 `--clustering:`
-Whether or not to check the pseudo-label using k-means clustering 
+Whether or not to check the pseudo-label using k-means clustering.   
 False : Self-Training / True : M3S   
 usage example :`--clustering`
 
