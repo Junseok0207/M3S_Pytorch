@@ -17,17 +17,10 @@ def parse_args():
     parser.add_argument("--lr", '-lr', type=float, default=0.01, help="Learning rate. Default is 0.0001.")
     parser.add_argument("--decay", type=float, default=1e-5, help="Learning rate. Default is 0.0001.")
     parser.add_argument("--patience", type=int, default=200)
-    
-    # hyper-parameter
-    #parser.add_argument("--tau", type=float, default=0.1)
-    #parser.add_argument("--thres", type=float, default=0.9)
-    #parser.add_argument("--lam", type=float, default=0.5)
-    #parser.add_argument("--lam2", type=float, default=0.5)
-    
+        
     parser.add_argument("--stage", type=int, default=5)
-    parser.add_argument("--clustering", action='store_true', default=True)
+    parser.add_argument("--clustering", action='store_true', default=False)
     parser.add_argument("--num_K", type=int, default=200)
-
     parser.add_argument("--device", '-d', type=int, default=3, help="GPU to use")    
     
     return parser.parse_known_args()[0]
