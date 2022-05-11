@@ -2,7 +2,7 @@
 
 Implementation of Multi-Stage Self-Supervised Learning for Graph Convolutional Networks on Graphs with Few Labels.
 
-A PyTorch implementation of "<a href="https://arxiv.org/abs/1902.11038">Multi-Stage Self-Supervised Learning for Graph Convolutional Networks on Graphs with Few Labels</a>" paper, accepted in AAAI 2020 Workshop.
+A PyTorch implementation of "<a href="https://arxiv.org/abs/1902.11038">Multi-Stage Self-Supervised Learning for Graph Convolutional Networks on Graphs with Few Labels</a>" paper, accepted in AAAI 2020.
 
 To implement the details, I refer official codes of <a href="https://github.com/liqimai/gcn/tree/AAAI-18/">"Deeper Insights into Graph Convolutional Networks
 for Semi-Supervised Learning".</a>
