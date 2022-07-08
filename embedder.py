@@ -33,7 +33,7 @@ class embedder:
 
         # For Evaluation
         self.best_val = 0 
-        self.epoch_list = [] # for epoch select
+        self.epoch_list = []
         
         self.train_accs = [] ; self.valid_accs = [] ; self.test_accs = [] 
         self.running_train_accs = [] ; self.running_valid_accs = [] ; self.running_test_accs = []
